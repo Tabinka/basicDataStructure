@@ -3,11 +3,7 @@ import stack
 
 myStack = stack.Stack()
 
-user_input = input("What do you want to add to your favourite movie stack? ")
+myStack.push(10)
+myStack.push(20)
 
-
-## Push to stack what user wants
-myStack.push(user_input)
-
-## Get my stack
-myStack.get()
+print(myStack.pop())

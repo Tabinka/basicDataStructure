@@ -5,7 +5,11 @@ class Stack:
             self.basicStack = []
       
       def push(self, item):
-            self.basicStack.append(item)
+            self.basicStack.insert(0,item)
             
-      def get(self):
-            print(self.basicStack)
+      def pop(self):
+            try:
+                  value = self.basicStack.pop(0)
+                  return value
+            except:
+                  return "Nothing to pop."
