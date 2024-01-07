@@ -13,3 +13,18 @@ class Stack:
                   return value
             except:
                   return "Nothing to pop."
+      
+      def peek(self):
+            if not self.is_empty():
+                  return self.basicStack[0]
+            return "Nothing to peek."      
+            
+      def is_empty(self):
+            if len(self.basicStack) > 0:
+                  return False
+            return True
+            
+      def size(self):
+            return len(self.basicStack)
+      
+      

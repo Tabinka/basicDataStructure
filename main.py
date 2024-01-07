@@ -3,7 +3,15 @@ import stack
 
 myStack = stack.Stack()
 
-myStack.push(10)
-myStack.push(20)
+#myStack.push(10)
+#myStack.push(20)
+#myStack.push(30)
+#myStack.push(100)
 
-print(myStack.pop())
+
+## Test scenarios for functions
+
+print(f"Size of a stack: {myStack.size()}")
+print(f"Peek function returns: {myStack.peek()}")
+print(f"Pop function returns: {myStack.pop()}")
+print(f"Stack is empty (True/False): {myStack.is_empty()}")
